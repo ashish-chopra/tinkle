@@ -1,0 +1,33 @@
+#callout {
+  margin-top: 70px;
+}
+
+
+#features {
+  text-align: center;
+}
+
+#features img {
+  margin: 0 0 20px;
+}
+
+footer {
+  background: #333;
+  color: #eee;
+  padding: 20px;
+  font-size: 12px;
+}
+
+.unstyled {
+  list-style: none;
+  padding: 0;
+}
+
+.tab-pane {
+  padding: 10px;
+  margin-top: 15px;
+}
+
+img.thumbnail {
+  margin: 0 20px 10px 0;
+}
