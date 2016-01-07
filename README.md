@@ -6,13 +6,15 @@ This is how it looks like:
 
 Pre-requisite
 ----------------
+Inside Tinkle, there are two packages: `tinkle/angular` and `tinkle/bootstrap`.  
+`angular` package contains the sample app designed in angular session of the training. And, `bootstrap` package contains the sample app designed during bootstrap session of the training.
+
 In order to download and run these sample apps on your local system, you must have following packages installed on your system:  
 
-    1. Node.js  
-    2. Bower         (npm install -g bower)
-    3. serve module  (npm install -g serve)
-
-Inside Tinkle, there are two packages: `tinkle/angular` and `tinkle/bootstrap`. Angular package contains the web application designed in angular session of the training. and Bootstrap package consists of hand-on application designed during bootstrap session of the training.
+    1. Git 
+    2. Node.js  
+    3. Bower         (npm install -g bower)
+    4. serve module  (npm install -g serve)
 
 
 How to run?
