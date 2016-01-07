@@ -1,0 +1,53 @@
+<div class="row">
+  <div class="col-sm-6">
+    <h1>Stories</h1>
+    <ul class="list-group">
+      <li class="list-group-item" ng-repeat="story in boardCtrl.stories" ng-click="boardCtrl.setCurrentStory(story)">
+          <h4 class="list-group-item-heading"><b>{{story.title}}</b></h4>
+          <p class="list-group-item-text">
+            {{story.description}}
+          </p>
+      </li>
+    </ul>
+    <button class="btn btn-primary" ng-click="boardCtrl.createStory()"><span class="glyphicon glyphicon-plus"></span></button>
+  </div>
+  <div class="col-sm-6">
+    <h1>Story</h1>
+    <div class="form-group">
+      <label for="title">Title</label>
+      <input type="text" id="title" class="form-control" ng-model="boardCtrl.currentStory.title" placeholder="user story title">
+    </div>
+    <div class="form-group">
+      <label for="status">Status</label>
+      <select  id="status" class="form-control"
+               ng-model="boardCtrl.currentStory.status"
+               ng-options="status.name as status.name for status in boardCtrl.statuses">
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="type">Type</label>
+      <select  id="type" class="form-control"
+               ng-model="boardCtrl.currentStory.type"
+               ng-options="t.name as t.name for t in boardCtrl.types">
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="description">Description</label>
+      <textarea id="description" rows="5" class="form-control" ng-model="boardCtrl.currentStory.description" placeholder="describe your story here"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="acceptanceCriteria">Acceptance Criteria</label>
+      <textarea id="acceptanceCriteria" ng-model="boardCtrl.currentStory.criteria" rows="5" class="form-control" placeholder="Acceptance Criteria"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="assignedTo">Assigned To</label>
+      <input type="text" id="assignedTo" class="form-control" placeholder="Assigned To" ng-model="boardCtrl.currentStory.assignee">
+    </div>
+    <div class="pull-right">
+      <button type="button" class="btn btn-primary" ng-click="boardCtrl.createStory()">Save</button>
+    </div>
+    <br/>
+    <br/>
+  </div>
+
+</div>
